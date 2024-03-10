@@ -26,18 +26,18 @@
 
 #### Enhanced For Loop
 
-`for(data-type variable : array | collection)
+```for(data-type variable : array | collection)
   {
    // Code to be executed
-  }`
+  }```
 
 - Printing a 2D-Array/Matrices/ AnyCollection
-  `int[ ][ ] x={{1,2,3},{4,5,6}} ;
+  ```int[ ][ ] x={{1,2,3},{4,5,6}} ;
   for(int[ ] x1 :x){
     for(int x2 : x1) {
       System.out.println(x2);
     }
-  }`
+  }```
 
 #### Patterns
 
