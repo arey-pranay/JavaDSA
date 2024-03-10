@@ -16,7 +16,7 @@
    - float: 4 bytes : Upto 7 decimal digits
    - double: 8 bytes : Upto 16 decimal digits
  - Non-Primitive
-    -
+    
 #### Arithmetics
  - The precedence of M and D is same, while that of A and S is same.
  - In case of conflicts, Follow L to R precedence. Except R to L for exponents.
