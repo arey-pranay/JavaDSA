@@ -8,7 +8,6 @@ class Solution {
                 }
             }
         }
-        new ArrayList<>()
         for(int i =0 ; i< zeroes.size();i++){
             setRowZero(matrix, zeroes.get(i).get(0));
             setColZero(matrix, zeroes.get(i).get(1));
