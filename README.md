@@ -71,6 +71,14 @@ for(data-type variable : array | collection)
     - It returns a positive integer if `a > b`, 0 if `a` is the same as `b`, a negative integer if `a < b` (According to ASCII values)
     - Problem with `==` is that Strings are objects and you can't always compare 2 strings if you want to compare values only
   - Getting a Substring: `a.substring(start, end)` so it will return characters from index `start` to `end-1`. And if only 1 index is passed then it is considered the start index.
-    
+
+## StringBuilder
+ - Modifying simple strings take up a lot of time.
+ - Here you can also
+     - Modify an old string: `a.setCharAt(index,char)`
+     - Inserting a char in string: `a.insert(index,char)`
+     - Deleting char: `a.delete(start,end)` deletes from start to end-1 index.
+     - Append another string: `a.append(b)` (It takes much less time than string concatenation)
+     - Getting the size of strinf: `a.length()` (Same as the String function..)
     
      
