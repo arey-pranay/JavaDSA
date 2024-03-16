@@ -80,5 +80,10 @@ for(data-type variable : array | collection)
      - Deleting char: `a.delete(start,end)` deletes from start to end-1 index.
      - Append another string: `a.append(b)` (It takes much less time than string concatenation)
      - Getting the size of strinf: `a.length()` (Same as the String function..)
-    
+
+## Bit Manipulation
+  - Bit Shifting
+      - Left Shift: N << i, Shift N left by i places
+      - Right Shift: N>>i, Shift N right by i places
+      - 
      
