@@ -58,4 +58,19 @@ for(data-type variable : array | collection)
 ## 2-D Arrays
 
 - Empty array declaration: type[ ][ ] name = new type[rows][columns]
--
+
+## Strings
+- They are immutable as a datatype.
+- If you want to input a word in a String, you use .next() and it just takes whatever is there before the first " ".
+- If you want to take an entire line, you use nextLine() for that purpose.
+- Some Important Functions
+    -- Concatenation: String FullName = firstName + lastName;
+    -- Number of chars: FullName.length();
+    -- Getting a char: FullName.charAt();
+    -- Comparing 2 strings: a.compareTo(b)
+      --- It returns a +ve int if a>b, 0 if a is same as b, a -ve int if a<b (According to ASCII values)
+      --- Problem with "==" is that Strings are objects and you can't always compare 2 strings if you want to compare values only
+    -- Getting a Substring: a.substring(start, end) so it will return start to end-1 indices. And if only 1 index is passed then it is considered the start index.
+    
+    
+     
