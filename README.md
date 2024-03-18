@@ -86,4 +86,14 @@ for(data-type variable : array | collection)
       - Left Shift: N << i, Shift N left by i places
       - Right Shift: N>>i, Shift N right by i places
       - 
-     
+## Linked List
+  - Variable Size, Non Contiguous Locations
+  - Time Complexities
+    - Insert: `O(1)`
+    - Retrieve: `O(n)`
+    - This is the opposite of ArrayList
+    - That is why it is used when a lot of modifications are needed.
+  - Made up of Nodes. Each node has a `data` and a reference (pointer) to the `next` node.
+  - The first Node is called "Head"
+  - 
+
