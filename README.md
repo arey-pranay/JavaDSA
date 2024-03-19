@@ -95,5 +95,9 @@ for(data-type variable : array | collection)
     - That is why it is used when a lot of modifications are needed.
   - Made up of Nodes. Each node has a `data` and a reference (pointer) to the `next` node.
   - The first Node is called "Head"
-  - 
 
+## Tree
+## Greedy Algorithms
+## Graphs
+## Recursion
+## Backtracking
