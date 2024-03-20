@@ -62,7 +62,7 @@ for(data-type variable : array | collection)
 ## Strings
 - They are immutable as a datatype.
 - If you want to input a word in a String, you use `.next()` and it just takes whatever is there before the first space.
-- If you want to take an entire line, you use `nextLine()` for that purpose.
+- If you want to take an entire line, you use `.nextLine()` for that purpose.
 - **Some Important Functions**
   - Concatenation: `String fullName = firstName + lastName;`
   - Number of chars: `fullName.length();`
@@ -96,8 +96,8 @@ for(data-type variable : array | collection)
   - Made up of Nodes. Each node has a `data` and a reference (pointer) to the `next` node.
   - The first Node is called "Head"
 
-## Tree
 ## Greedy Algorithms
-## Graphs
+## Tree
 ## Recursion
+## Graphs
 ## Backtracking
