@@ -97,6 +97,16 @@ for(data-type variable : array | collection)
   - The first Node is called "Head"
 
 ## Greedy Algorithms
+
+- Greedy algorithms make locally optimal choices at each step with the hope of finding a global optimum.
+- They are efficient and easy to implement but may not always provide the best solution.
+- Examples:
+  - **Dijkstra's Algorithm**: Finds the shortest path from a single source to all other nodes in a graph with non-negative edge weights.
+  - **Kruskal's Algorithm**: Finds a minimum spanning tree for a connected weighted graph.
+  - **Prim's Algorithm**: Another algorithm to find a minimum spanning tree in a graph.
+  - **Fractional Knapsack**: A variant of the knapsack problem where items can be broken into fractions.
+  - **Activity Selection**: Selects the maximum number of activities that can be performed by a single person, assuming that a person can only work on one activity at a time.
+  
 ## Tree
 ## Recursion
 ## Graphs
