@@ -145,22 +145,51 @@ for(data-type variable : array | collection)
   - Expression evaluation
 
 ## Graphs
+### Representations
 
-- **Definition**: A graph is a collection of nodes (vertices) and edges that connect pairs of nodes. A graph may be directed (edges have direction) or undirected (edges have no direction).
-- **Types**:
-  - Directed Graph (Digraph)
-  - Undirected Graph
-  - Weighted Graph (edges have weights)
-- **Representations**:
-  - Adjacency Matrix
-  - Adjacency List
-- **Traversals**:
-  - Depth-First Search (DFS)
-  - Breadth-First Search (BFS)
-- **Applications**:
-  - Social networks
-  - Road networks
-  - Network routing algorithms
+#### Adjacency Matrix
+- An adjacency matrix is a two-dimensional array where each cell `(i, j)` represents whether there is an edge from vertex `i` to vertex `j`.
+- If the graph is weighted, the cell may contain the weight of the edge.
+- **Advantages:**
+  - Simple implementation for dense graphs.
+  - Efficient for checking edge existence and determining neighbors.
+- **Disadvantages:**
+  - Requires `O(V^2)` space for `V` vertices, which can be inefficient for sparse graphs.
+  - Inefficient for graphs with many vertices and few edges.
+
+#### Adjacency List
+- An adjacency list is a collection of lists or arrays where each list represents the neighbors of a vertex.
+- For an unweighted graph, each list contains the vertices adjacent to the corresponding vertex.
+- For a weighted graph, each list contains pairs `(v, w)` where `v` is the neighbor vertex and `w` is the weight of the edge.
+- **Advantages:**
+  - Efficient use of space for sparse graphs (`O(V + E)` where `V` is the number of vertices and `E` is the number of edges).
+  - Efficient for iterating over edges and finding neighbors.
+- **Disadvantages:**
+  - Less efficient for dense graphs.
+  - Requires more space per edge than an adjacency matrix.
+
+### Traversals
+
+#### Depth-First Search (DFS)
+- DFS is a graph traversal algorithm that explores as far as possible along each branch before backtracking.
+- It starts at a selected vertex and explores as far as possible along each branch before backtracking.
+- Uses a stack or recursion to keep track of visited vertices.
+- **Advantages:**
+  - Simple implementation using recursion or a stack.
+  - Suitable for finding paths, cycles, and connected components.
+- **Disadvantages:**
+  - May get stuck in infinite loops if not properly implemented or if the graph contains cycles.
+
+#### Breadth-First Search (BFS)
+- BFS is a graph traversal algorithm that explores all neighbor vertices at the current depth before moving to the next level.
+- It starts at a selected vertex and explores all of its neighbors before moving to the next level of vertices.
+- Uses a queue to keep track of visited vertices and their neighbors.
+- **Advantages:**
+  - Guarantees the shortest path from the source vertex to all other vertices in an unweighted graph.
+  - Suitable for finding the shortest path, connected components, and level-based traversal.
+- **Disadvantages:**
+  - Requires more memory than DFS, especially for large graphs.
+  - Less suitable for certain applications like topological sorting.
 
 ## Recursion
 
