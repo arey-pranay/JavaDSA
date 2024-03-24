@@ -49,6 +49,8 @@ for(data-type variable : array | collection)
 
 #### Wrapper Classes
 
+#### Type Conversions
+
 ## 1-D Arrays
 
 - Empty array declaration: type[ ] name = new type[size]
@@ -106,7 +108,20 @@ for(data-type variable : array | collection)
   - **Prim's Algorithm**: Another algorithm to find a minimum spanning tree in a graph.
   - **Fractional Knapsack**: A variant of the knapsack problem where items can be broken into fractions.
   - **Activity Selection**: Selects the maximum number of activities that can be performed by a single person, assuming that a person can only work on one activity at a time.
+ 
+  
 ## Stack
+
+- **Definition**: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. It means that the element added last to the stack will be the first one to be removed.
+- **Operations**:
+  - `push`: Adds an item to the top of the stack.
+  - `pop`: Removes and returns the top item from the stack.
+  - `peek` (or `top`): Returns the top item from the stack without removing it.
+  - `isEmpty`: Checks if the stack is empty.
+- **Applications**:
+  - Function call stack in programming languages.
+  - Implementing undo functionality in text editors.
+  - Syntax parsing in compilers.
 ## Queue
   - The offer method inserts an element if possible, otherwise returning false. This differs from the Collection.add method, which can fail to add an element only by throwing an unchecked exception. The offer method is designed for use when failure is a normal, rather than exceptional occurrence, for example, in fixed-capacity (or "bounded") queues.
 
@@ -114,8 +129,68 @@ for(data-type variable : array | collection)
 
   - The element() and peek() methods return, but do not remove, the head of the queue.
 
-
 ## Tree
-## Recursion
+
+- **Definition**: A tree is a hierarchical data structure consisting of nodes connected by edges. The topmost node is called the root. Each node can have zero or more children.
+- **Types**:
+  - Binary Tree: Each node has at most two children, referred to as the left child and the right child.
+  - Binary Search Tree (BST): A binary tree in which the left child of a node contains only values less than the node's value, and the right child contains only values greater than the node's value.
+- **Operations**:
+  - Traversal (Inorder, Preorder, Postorder)
+  - Insertion
+  - Deletion
+- **Applications**:
+  - Organizational charts
+  - File systems
+  - Expression evaluation
+
 ## Graphs
+
+- **Definition**: A graph is a collection of nodes (vertices) and edges that connect pairs of nodes. A graph may be directed (edges have direction) or undirected (edges have no direction).
+- **Types**:
+  - Directed Graph (Digraph)
+  - Undirected Graph
+  - Weighted Graph (edges have weights)
+- **Representations**:
+  - Adjacency Matrix
+  - Adjacency List
+- **Traversals**:
+  - Depth-First Search (DFS)
+  - Breadth-First Search (BFS)
+- **Applications**:
+  - Social networks
+  - Road networks
+  - Network routing algorithms
+
+## Recursion
+
+- **Definition**: Recursion is a programming technique where a function calls itself in its own definition. It breaks down a problem into smaller subproblems of the same type.
+- **Base Case**: A condition that terminates the recursion by returning a value without further recursive calls.
+- **Examples**:
+  - Factorial function
+  - Fibonacci sequence
+  - Binary search
+- **Pros**:
+  - Simplifies code and logic for certain problems.
+  - Elegant solution for problems that can be divided into subproblems.
+- **Cons**:
+  - May lead to stack overflow if not implemented correctly.
+  - Some recursive algorithms can be less efficient than their iterative counterparts.
+
 ## Backtracking
+
+- **Definition**: Backtracking is a systematic way to iterate through all possible solutions for a problem. It involves trying out different sequences of choices, backtracking when a dead end is reached, and continuing until the solution is found.
+- **Components**:
+  - **Decision Tree**: Represents all possible choices at each step of the algorithm.
+  - **State Space Tree**: Represents the sequence of choices made during the exploration of the solution space.
+- **Examples**:
+  - N-Queens problem
+  - Sudoku solving
+  - Generating permutations or combinations
+- **Strategies**:
+  - Start with an empty solution and incrementally build it.
+  - Use pruning techniques to avoid exploring unnecessary branches of the solution space.
+- **Applications**:
+  - Combinatorial optimization problems
+  - Constraint satisfaction problems
+
