@@ -51,6 +51,75 @@ for(data-type variable : array | collection)
 
 #### Type Conversions
 
+Java supports various types of type conversions, including implicit and explicit conversions between primitive data types, as well as conversions involving objects.
+
+##### Implicit Type Conversion
+
+Also known as automatic type conversion, it occurs when the destination data type can hold all possible values of the source data type. Java performs implicit type conversion when no data loss occurs during the conversion.
+
+Example:
+```java
+int numInt = 10;
+double numDouble = numInt; // Implicit conversion from int to double
+```
+
+##### Explicit Type Conversion (Casting)
+
+Also known as type casting, it involves converting a value from one data type to another explicitly. Explicit type conversion is necessary when the destination data type cannot hold all possible values of the source data type.
+
+Example:
+```java
+double numDouble = 10.5;
+int numInt = (int) numDouble; // Explicit conversion from double to int using casting
+```
+
+##### Widening Conversion (Implicit)
+
+Occurs when the destination data type has a larger range and can hold all possible values of the source data type. For example, converting an `int` to a `long` or a `float` to a `double`.
+
+##### Narrowing Conversion (Explicit)
+
+Occurs when the destination data type has a smaller range and cannot hold all possible values of the source data type. Narrowing conversion requires explicit type casting and may result in data loss. For example, converting a `double` to an `int` or a `long` to a `short`.
+
+##### Numeric Promotion
+
+Automatic type conversion that occurs when applying operators to operands of different data types. Java promotes operands to a common data type according to a set of rules known as numeric promotion. For example, when adding an `int` and a `double`, the `int` is promoted to a `double` before the addition operation.
+
+##### String Conversion
+
+Converting other data types to `String` objects or converting `String` objects to other data types. Java provides various methods for converting between primitive types and `String` objects, such as `parseInt()`, `valueOf()`, and `toString()`.
+
+Example:
+```java
+int numInt = 10;
+String numString = String.valueOf(numInt); // Convert int to String
+```
+
+##### Object Casting
+
+Converting between different reference types, such as superclass to subclass or subclass to superclass. Java allows explicit casting between compatible reference types, but it must be done carefully to avoid `ClassCastException` errors.
+
+Example:
+```java
+Object obj = new Integer(100);
+Integer intValue = (Integer) obj; // Explicit casting from Object to Integer
+```
+
+##### Subtracting 'a' and '0'
+
+Subtracting `'a'` and `'0'` from characters is a common operation used in programming to convert characters representing digits or lowercase letters to their corresponding numeric values. This operation exploits the ASCII encoding, where the characters `'0'` to `'9'` have consecutive values, as do the lowercase letters `'a'` to `'z'`. By subtracting the ASCII value of `'a'` or `'0'` from the character, we obtain the numeric value.
+
+Example:
+```java
+char charDigit = '7';
+int numericValue = charDigit - '0'; // Convert char digit to int value (numericValue will be 7)
+```
+
+```java
+char charLetter = 'e';
+int letterIndex = charLetter - 'a' + 1; // Convert char letter to index (letterIndex will be 5 for 'e')
+```
+
 ## 1-D Arrays
 
 - Empty array declaration: type[ ] name = new type[size]
