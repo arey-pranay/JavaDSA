@@ -43,6 +43,33 @@ for(data-type variable : array | collection)
   }
   ```
 
+#### HashMaps
+HashMap has best complexity but order not maintained, linkedhashmap maintains inserted order and treemap maintains sorted order.
+similar for sets, but they only have elments and not the pairs.
+-put(key, value): Inserts a key-value pair into the map. If the key already exists, the value is overwritten.
+-get(key): Retrieves the value associated with the specified key. Returns null if the key is not found.
+-containsKey(key): Checks if the map contains the specified key.
+-containsValue(value): Checks if the map contains the specified value.
+-remove(key): Removes the mapping for the specified key from the map if present.
+-size(): Returns the number of key-value mappings in the map.
+-isEmpty(): Returns true if the map contains no key-value mappings.
+
+```
+   for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
+            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        }
+
+        // Key Set
+        for (String key : hashMap.keySet()) {
+            System.out.println("Key: " + key);
+        }
+
+        // Values
+        for (Integer value : hashMap.values()) {
+            System.out.println("Value: " + value);
+        }
+```
+
 #### Patterns
 
 #### Functions
