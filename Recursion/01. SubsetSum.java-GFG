@@ -1,0 +1,22 @@
+class Solution {
+    ArrayList<Integer> subsetSums(ArrayList<Integer> arr, int n) {
+        ArrayList<Integer> answer = new ArrayList<>();
+        addn(answer,arr,0,n,0);
+        return answer;
+    }
+    //what all do we need to create the output, (in the entire process..)
+    //we need a list to store answers
+    //we need the input list
+    //we need to know the number of elements we've traversed
+    //we need to know the total number of elements
+    //we need to know the sum in each step
+    public static void addn(ArrayList<Integer> ans, ArrayList<Integer> arr, int i, int n, int sum){
+        if(i==n){
+            ans.add(sum);
+            return;
+        }
+        addn(ans,arr,i+1,n,sum+arr.get(i));//considering the current element in the sum total
+        addn(ans,arr,i+1,n,sum);//not considering the current element in the sum total
+    }
+    //this function will keep going till the last element, and then add it in the list of outputs
+}
