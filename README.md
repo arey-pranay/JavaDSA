@@ -99,7 +99,8 @@ Example:
 double numDouble = 10.5;
 int numInt = (int) numDouble; // Explicit conversion from double to int using casting
 ```
-
+#### Array to List
+        List ip = Arrays.asList(nums);
 ##### Widening Conversion (Implicit)
 
 Occurs when the destination data type has a larger range and can hold all possible values of the source data type. For example, converting an `int` to a `long` or a `float` to a `double`.
