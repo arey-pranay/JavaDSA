@@ -11,6 +11,7 @@ class Solution {
     //we need to know the total number of elements
     //we need to know the sum in each step
     public static void addn(ArrayList<Integer> ans, ArrayList<Integer> arr, int i, int n, int sum){
+        //when we are at the end, just add whatever is the result
         if(i==n){
             ans.add(sum);
             return;
