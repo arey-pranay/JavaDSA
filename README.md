@@ -17,7 +17,16 @@
   - long: 8 bytes : -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
   - float: 4 bytes : Upto 7 decimal digits
   - double: 8 bytes : Upto 16 decimal digits
-- Non-Primitive
+
+- Non-Primitive: In Java, non-primitive data types, also known as reference types, are those that are not predefined by the language itself. They include:
+
+    - **Arrays**: Arrays are used to store multiple values of the same data type in contiguous memory locations. They are objects in Java and can hold either primitive data types or references to objects.
+    - **Classes**: Classes are user-defined reference types that serve as blueprints for creating objects. They encapsulate data for the object and provide methods to operate on that data.
+    - **Interfaces**: Interfaces define a set of method signatures that a class can implement. They provide a way to achieve abstraction and multiple inheritance in Java.
+    -  **Enums**: Enums (short for enumerations) are special data types that allow a variable to be a set of predefined constants. They provide a way to create a group of related constants in a more readable and type-safe manner.
+    -  **Lists**: Java provides several implementations of the List interface, such as ArrayList, LinkedList, etc. Lists are ordered collections of elements that allow duplicates and provide methods for accessing, searching, and modifying elements.
+    -  **Sets**: Sets are collections that do not allow duplicate elements. Java provides implementations like HashSet, TreeSet, etc.
+    -  **Maps**: Maps are collections of key-value pairs where each key is unique. Java provides implementations like HashMap, TreeMap, etc., for mapping keys to values.
 
 #### Arithmetics
 
