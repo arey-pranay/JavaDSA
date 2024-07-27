@@ -15,3 +15,7 @@
 ## 04. Stock Buy and Sell (Multiple times sell and buy) (Still hold at most 1 stock at a time)
   - Initially same values.
   - If profit is there, then add this prof in the totalProfit. And anyway set the boughtAt = prices[i] at every iteration end
+
+## 05. Stock Buy and Sell ( At most 2 transactions )
+  - sell1 sell2 0, buy1 buy2 MIN_VALUE. for(i=0 to prices.length). The order: b1 s1 b2 s2
+  - Take max of current value of variable with (- + - +)prices[i] of prevOrder variable. b1 = Math.max(b1, -prices[i]) s1 = Math.max(s1, b1+prices[i]) ....
