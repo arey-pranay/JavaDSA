@@ -19,3 +19,7 @@
 ## 05. Stock Buy and Sell ( At most 2 transactions )
   - sell1 sell2 0, buy1 buy2 MIN_VALUE. for(i=0 to prices.length). The order: b1 s1 b2 s2
   - Take max of current value of variable with (- + - +)prices[i] of prevOrder variable. b1 = Math.max(b1, -prices[i]) s1 = Math.max(s1, b1+prices[i]) ....
+
+## 06. Maximum Subarray Sum
+  - initially sum = nums[0] ans = sum (return ans at the end). for(int i=1 till i<nums.length)
+  - if sum gets negative, reset to 0. add the current number to sum. check if sum is greater than ans, and then update ans if needed. 
