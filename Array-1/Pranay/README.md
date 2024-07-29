@@ -18,3 +18,6 @@
   - Count 0s, Count 1s while traversing. From 0 till numZeroes, put 0s, then till numOnes put 1s and then till the end of the array put 2s.
   - Count Sort, maybe this.
 
+#### 6. Stock Buy Sell
+  - Suppose you buy at 0th index with profit =0. for(int i=0 to prices.length) if(prices[i]<boughAt) then buy here, else check if profit should be updated here.
+  - You can buy and sell only once.
