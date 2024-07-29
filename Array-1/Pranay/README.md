@@ -1,5 +1,8 @@
 #### 1. Set Matrix Zero
 
+  - M rows and N columns. Create 2 boolean arrays, rows and cols, do full traversal and when matrix[i][j]=0, put rows[i]=true nd cols[j]=true;
+  - for(i=0 to m){ if(rows[i]==true){ for(j=0 to n) matrix[i][j]=0}} . And a similar loop for j also
+
 #### 2. Pascal's Triangle
 
 #### 3. Next Permutation
