@@ -25,3 +25,7 @@
 #### 7. Rotate Matrix
   - Transpose the matrix along the diagonal (i = 0 to n and in that j = i to n, so that the already interchaged elements don't get interchanged again and again)
   - Reverse each row by swapping the i and length-1 element till half of the array only.
+
+#### 8. Merge Intervals
+  - Very imp to sort a 2D array         Arrays.sort(intervals, (i1, i2) -> Integer.compare(i1[0], i2[0]));
+  - Must see the code. Please.
