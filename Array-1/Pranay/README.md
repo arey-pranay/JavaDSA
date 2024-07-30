@@ -21,3 +21,7 @@
 #### 6. Stock Buy Sell
   - Suppose you buy at 0th index with profit =0. for(int i=0 to prices.length) if(prices[i]<boughAt) then buy here, else check if profit should be updated here.
   - You can buy and sell only once.
+
+#### 7. Rotate Matrix
+  - Transpose the matrix along the diagonal (i = 0 to n and in that j = i to n, so that the already interchaged elements don't get interchanged again and again)
+  - Reverse each row by swapping the i and length-1 element till half of the array only.
