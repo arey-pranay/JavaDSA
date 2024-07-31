@@ -37,3 +37,7 @@
 #### 10. Find Duplicate element 
   - Create n sized boolean array, and then in a forEach loop, just check if ans[i]==true, return ans[i].
   - Otherwise put that index as a true in the boolean answer array.
+
+#### 11. Repeat and Missing Number
+  - Create a boolean array, traverse the given array, whatever num you find, put that index true in boolean array.
+  - If the index is already true, then it will be ans[0]. For ans[1], find the element in the boolean array which was false even after you traversed the first array completely (one more for loop after the old one).
