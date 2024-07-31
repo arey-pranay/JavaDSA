@@ -29,3 +29,7 @@
 #### 8. Merge Intervals
   - Very imp to sort a 2D array         Arrays.sort(intervals, (i1, i2) -> Integer.compare(i1[0], i2[0]));
   - Must see the code. Please.
+
+#### 9. Merge 2 sorted Arrays
+  - Start from end and use 3 pointers. m-1,n-1,m+n-1.
+  - Keep putting the greater element by comparing i and j, at the k position and decrement as required.
