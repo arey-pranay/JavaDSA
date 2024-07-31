@@ -33,3 +33,7 @@
 #### 9. Merge 2 sorted Arrays
   - Start from end and use 3 pointers. m-1,n-1,m+n-1.
   - Keep putting the greater element by comparing i and j, at the k position and decrement as required.
+
+#### 10. Find Duplicate element 
+  - Create n sized boolean array, and then in a forEach loop, just check if ans[i]==true, return ans[i].
+  - Otherwise put that index as a true in the boolean answer array.
