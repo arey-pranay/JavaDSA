@@ -49,3 +49,7 @@
 #### 13. Search in 2D Matrix
   - Start from first row rightmost element. if found then return true.
   - if target is smaller j-- (search on the left), otherwise i++ (search below).
+
+#### 14. Find the Power
+  - Please Read the code
+  - Binary representations are required in this code, bitwise math.
