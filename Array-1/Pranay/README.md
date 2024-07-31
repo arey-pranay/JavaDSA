@@ -61,3 +61,7 @@
 #### 16. Majority Element (n/3)
   - Create a hashmap to map each number with its occurences, and then return whichever number has more than 3 occurences.          for(Map.Entry<Integer, Integer> e : hm.entrySet()){
   - There is also a modified version of Moore's Voting Algorithm for this one
+
+#### 17. Unique Paths
+  - Use recursion, then just memoize. The base case is that if any of m and n gets 1 then return 1.
+  - Otherwise, just return func(m-1,n) + func(m,n-1).
