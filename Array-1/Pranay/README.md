@@ -41,3 +41,11 @@
 #### 11. Repeat and Missing Number
   - Create a boolean array, traverse the given array, whatever num you find, put that index true in boolean array.
   - If the index is already true, then it will be ans[0]. For ans[1], find the element in the boolean array which was false even after you traversed the first array completely (one more for loop after the old one).
+
+#### 12. Count inversions
+  - i to length-1, i+1 to length
+  - if condition met (i.e., if (arr[i] < arr[j]) then do count++. At the end, just return the count.
+
+#### 13. Search in 2D Matrix
+  - Start from first row rightmost element. if found then return true.
+  - if target is smaller j-- (search on the left), otherwise i++ (search below).
