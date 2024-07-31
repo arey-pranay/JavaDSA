@@ -57,3 +57,7 @@
 #### 15. Majority Element
   - Moore's Voting Algorithm. Candidate = nums[0], Count = 1; Return cadidate at the end;
   - if(nums[i]==candidate) count++; else count--. if(count==0)candidate=nums[i]; count=1;
+
+#### 16. Majority Element (n/3)
+  - Create a hashmap to map each number with its occurences, and then return whichever number has more than 3 occurences.          for(Map.Entry<Integer, Integer> e : hm.entrySet()){
+  - There is also a modified version of Moore's Voting Algorithm for this one
