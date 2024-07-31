@@ -53,3 +53,7 @@
 #### 14. Find the Power
   - Please Read the code
   - Binary representations are required in this code, bitwise math.
+
+#### 15. Majority Element
+  - Moore's Voting Algorithm. Candidate = nums[0], Count = 1; Return cadidate at the end;
+  - if(nums[i]==candidate) count++; else count--. if(count==0)candidate=nums[i]; count=1;
