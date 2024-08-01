@@ -65,3 +65,6 @@
 #### 17. Unique Paths
   - Use recursion, then just memoize. The base case is that if any of m and n gets 1 then return 1.
   - Otherwise, just return func(m-1,n) + func(m,n-1).
+
+#### 18. Reverse Pairs
+  - See leetcode
