@@ -68,3 +68,12 @@
 
 #### 18. Reverse Pairs
   - See leetcode
+  - Binary Search Tree or maybe Merge Sort based
+
+#### 19. Two Sum
+  - Create a hashmap to store nums[i] and i. key will be number and value will be index.
+  - If hashmap.contains target-nums[i] return an array of i and hm.get(target-nums[i])
+
+#### 20. Four Sum
+  - Sort the array first and then nested for loop i=0 to n and j=i+1 to n. inside that, k = j+1, l = n-1 while loop (k<l)
+  - Take the sum of all four elements, if matche then just add all 4 element and add the array to ans, and k++ l--, other do either k++ or l-- depends on if (target < sum) or (target>sum)
