@@ -5,3 +5,7 @@
 #### 02. Middle of a linked list
 - Tortoise Hare approach
 - Whenever fast == null or fast.next == null, return slow. Otherwise move by 2 and move slow by 1 for every iteration.
+
+#### 03. Merge Two Sorted Linked Lists
+- Put a dummy pointer null and a temp pointer. Initially compare list1 and list2 and assign temp to smaller. Increment list1 or list2. Then dummy.next = temp;
+- while both are not null, compare assign and increment the smaller of list1 and list2. then do this while list!=null then while list2!=null. return dummy.next
