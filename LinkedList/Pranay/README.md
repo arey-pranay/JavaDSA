@@ -9,3 +9,7 @@
 #### 03. Merge Two Sorted Linked Lists
 - Put a dummy pointer null and a temp pointer. Initially compare list1 and list2 and assign temp to smaller. Increment list1 or list2. Then dummy.next = temp;
 - while both are not null, compare assign and increment the smaller of list1 and list2. then do this while list!=null then while list2!=null. return dummy.next
+
+#### 04. Remove nth node from the last/end
+- Calculate total, run a loop for i = 1 to total-n, curr = curr.next Then just do curr.next = curr.next.next and then return head.
+- Edge case is that if n == total then you can simply return head.next
