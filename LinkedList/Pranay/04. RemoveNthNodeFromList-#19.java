@@ -8,44 +8,64 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        //initially total zero hai
-        int total = 0;
-        //ek temp node bnaya usko head pe rkha
-        ListNode temp = head;
-        //mtlb agr ek element hai, to wo delete hojayega
         if(head.next==null) return null;
-
-        //mtlb 2 element 
-        if(head.next.next == null){
-            //ya to last delete hoga, ya fir second last (mtlb first)
-            if(n==1) {
-                head.next = null;
-                return head;
-            } else {
-                head = head.next;
-                return head;
-            }
-        }
-        //total number of nodes count krlete hai
-        while(temp!=null){
+        ListNode curr = head;
+        int total = 0;
+        while(curr!=null){
+            curr = curr.next;
             total++;
-            temp = temp.next;
         }
-        //agr n aur total same hai, mtlb first hata hai
-        if(n==total){
-            head = head.next;
-            return head;
+        if(n==total) return head.next;
+        curr = head;
+        for(int i=1;i<total-n;i++){
+            curr = curr.next;
         }
-
-        int pos = total -n-1;
-        int current =0;
-        temp = head;
-        for(int i=0; i<pos;i++){
-            temp = temp.next;
-        }
-        temp.next = temp.next.next;
+        curr.next = curr.next.next;
         return head;
     }
 }
+
+// class Solution {
+//     public ListNode removeNthFromEnd(ListNode head, int n) {
+//         //initially total zero hai
+//         int total = 0;
+//         //ek temp node bnaya usko head pe rkha
+//         ListNode temp = head;
+//         //mtlb agr ek element hai, to wo delete hojayega
+//         if(head.next==null) return null;
+
+//         //mtlb 2 element 
+//         if(head.next.next == null){
+//             //ya to last delete hoga, ya fir second last (mtlb first)
+//             if(n==1) {
+//                 head.next = null;
+//                 return head;
+//             } else {
+//                 head = head.next;
+//                 return head;
+//             }
+//         }
+//         //total number of nodes count krlete hai
+//         while(temp!=null){
+//             total++;
+//             temp = temp.next;
+//         }
+//         //agr n aur total same hai, mtlb first hata hai
+//         if(n==total){
+//             head = head.next;
+//             return head;
+//         }
+
+//         int pos = total -n-1;
+//         int current =0;
+//         temp = head;
+//         for(int i=0; i<pos;i++){
+//             temp = temp.next;
+//         }
+//         temp.next = temp.next.next;
+//         return head;
+//     }
+// }
