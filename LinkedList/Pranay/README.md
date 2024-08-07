@@ -17,3 +17,7 @@
 #### 05. Add two numbers 🤯
 - Do not add full numbers, add node by node. Maintain a head and a tail for answer linkedlist.
 - Add sum, and create new node and adjust carry too. At the end just check if there is still carry remaining in the variable.
+
+#### 06. Delete a given node
+- node.val = node.next.val;
+- node.next = node.next.next;
