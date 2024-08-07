@@ -7,56 +7,96 @@
  *     ListNode(int val) { this.val = val; } // constructor
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; } // constructor
  */
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        int carry = 0; // carry ko store karne ke liye
-        ListNode head = null; // shuruaati node
-        ListNode tail = null; // last node
-        while(l1 != null || l2 != null)
-        {
-            int sum = 0; // dono node ke yog ko store karne ke liye
-            if(carry != 0)
-            {
-                sum += carry--; // carry ko ghatayein
-            } 
-            if(l1 != null)
-            {
-                sum += l1.val; // l1 ke value ko sum mein jodna
-                l1 = l1.next; // next node par move karein
-            }
-
-            if(l2 != null)
-            {
-                sum += l2.val; // l2 ke value ko sum mein jodna
-                l2 = l2.next; // next node par move karein
-            }
-
-            if(sum > 9)
-            {
-                sum -= 10; // carry nikalna
-                carry = 1; // carry ko set karein
-            }
-
-            ListNode temp = new ListNode(sum); // naya node banayein
-            if(tail != null)
-            {
-                tail.next = temp; // purane node ke next mein naya node set karein
-            }
-            else
-            {
-                head = temp; // agar ye pehli node hai, toh head ko set karein
-            }
+        ListNode dummy = new ListNode(-1);
+        ListNode current = dummy;
+        ListNode temp1 = l1;
+        ListNode temp2 = l2;
+        int carry = 0;
+        
+        while (temp1 != null || temp2 != null) {
+            int val1 = (temp1 != null) ? temp1.val : 0; //if temp 1 is null then value is 0 otherwise node val
+            int val2 = (temp2 != null) ? temp2.val : 0;
+            int sum = val1 + val2 + carry;
+            carry = sum / 10;
+            int digit = sum % 10;
             
-            tail = temp; // tail ko update karein
+            current.next = new ListNode(digit);
+            current = current.next;
+            
+            if (temp1 != null) temp1 = temp1.next;
+            if (temp2 != null) temp2 = temp2.next;
         }
-
-        if(carry != 0)
-        {
-            tail.next = new ListNode(carry); // agar carry bacha hai, toh usko add karein
+        
+        // If there's a carry left after the final addition
+        if (carry > 0) {
+            current.next = new ListNode(carry);
         }
-        return head; // head node ko return karein
+        
+        return dummy.next;
     }
 }
+// class Solution {
+//     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+//         int carry = 0; // carry ko store karne ke liye
+//         ListNode head = null; // shuruaati node
+//         ListNode tail = null; // last node
+//         while(l1 != null || l2 != null)
+//         {
+//             int sum = 0; // dono node ke yog ko store karne ke liye
+//             if(carry != 0)
+//             {
+//                 sum += carry--; // carry ko ghatayein
+//             } 
+//             if(l1 != null)
+//             {
+//                 sum += l1.val; // l1 ke value ko sum mein jodna
+//                 l1 = l1.next; // next node par move karein
+//             }
+
+//             if(l2 != null)
+//             {
+//                 sum += l2.val; // l2 ke value ko sum mein jodna
+//                 l2 = l2.next; // next node par move karein
+//             }
+
+//             if(sum > 9)
+//             {
+//                 sum -= 10; // carry nikalna
+//                 carry = 1; // carry ko set karein
+//             }
+
+//             ListNode temp = new ListNode(sum); // naya node banayein
+//             if(tail != null)
+//             {
+//                 tail.next = temp; // purane node ke next mein naya node set karein
+//             }
+//             else
+//             {
+//                 head = temp; // agar ye pehli node hai, toh head ko set karein
+//             }
+            
+//             tail = temp; // tail ko update karein
+//         }
+
+//         if(carry != 0)
+//         {
+//             tail.next = new ListNode(carry); // agar carry bacha hai, toh usko add karein
+//         }
+//         return head; // head node ko return karein
+//     }
+// }
 // high time taken
 //import java.math.BigInteger;
 
