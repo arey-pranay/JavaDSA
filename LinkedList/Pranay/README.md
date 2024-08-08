@@ -29,3 +29,7 @@
 #### 08. Cycle Detection
   - Fast and Slow pointer, while(fast!=null && fast.next!=null) move fast by two, move slow by one, if they are equal return true.
   - After the while loop ends, return false.
+
+#### 09. Reverse K Nodes 😐
+  - Refer the code please
+  - Iterative and Recursive Solutions are there. Both beat 100% codes.
