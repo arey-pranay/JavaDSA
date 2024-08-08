@@ -33,3 +33,11 @@
 #### 09. Reverse K Nodes 😐
   - Refer the code please
   - Iterative and Recursive Solutions are there. Both beat 100% codes.
+
+#### 10. Check Palindrome
+  - Calculate size, Reverse a half of linked list.
+  - Compare the head original linked list with head of reversed half, if not matched then return false. Otherwise keep going forward by one till list ends, then return true.
+
+#### 11. Linked List Cycle - II (Finf the start of cycle)
+  - Fast and Slow Pointers. while fast!=null && fast.next!=null. if fast==slow. while fast!=slow
+  - Return fast after the inner while. Return null after the outer while.
