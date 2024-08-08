@@ -25,3 +25,7 @@
 #### 07. Find Interesection of 2 linked lists
   - calculate count1 and count2. if c1>c2 headA = headA.next till false, and vice versa for c2>c1
   - while(headA != headB) headA= headA.next; headB = headB.next;     Then when loop breaks, return headA or headB
+
+#### 08. Cycle Detection
+  - Fast and Slow pointer, while(fast!=null && fast.next!=null) move fast by two, move slow by one, if they are equal return true.
+  - After the while loop ends, return false.
