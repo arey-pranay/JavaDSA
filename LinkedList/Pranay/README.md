@@ -21,3 +21,7 @@
 #### 06. Delete a given node
 - node.val = node.next.val;
 - node.next = node.next.next;
+
+#### 07. Find Interesection of 2 linked lists
+  - calculate count1 and count2. if c1>c2 headA = headA.next till false, and vice versa for c2>c1
+  - while(headA != headB) headA= headA.next; headB = headB.next;     Then when loop breaks, return headA or headB
