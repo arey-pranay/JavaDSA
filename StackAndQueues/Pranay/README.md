@@ -13,3 +13,7 @@
 #### 04. Queue Using Stacks
   - push:  while(!s1.isEmpty()){s2.push(s1.pop());}s1.push(x); while(!s2.isEmpty()){ s1.push(s2.pop()); }
   - remove:   return  s1.pop();   peek: return s1.peek();  empty: return s1.isEmpty();
+
+#### 05. Valid Parentheses
+  - agr opening mila to uska corresponding closing stack me dalo
+  - agr closing mila to stack ke top se compare krlo
