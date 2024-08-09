@@ -17,3 +17,7 @@
 #### 05. Valid Parentheses
   - agr opening mila to uska corresponding closing stack me dalo
   - agr closing mila to stack ke top se compare krlo
+
+#### 06. Next Greater Element
+  - Three approaches
+  - HashMap, Stack and HashMap, 2 Stacks
