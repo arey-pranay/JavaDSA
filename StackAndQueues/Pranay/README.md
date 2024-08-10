@@ -21,3 +21,7 @@
 #### 06. Next Greater Element
   - Three approaches
   - HashMap, Stack and HashMap, 2 Stacks
+
+#### 07. Sort Stack With Just Recursion
+  - if(stack.isEmpty()) return; int top = stack.pop(); sortStack(stack); func(stack, top);
+  -  if (stack.empty() == true || current > stack.peek()) {	stack.push(current); return; } int top = stack.pop(); func(stack, current); stack.push(top);
