@@ -39,3 +39,15 @@
 #### 08. Top View
 -  Just like bottom view, but add for a column only when you get the first element of that col, so in the for loop, before adding to the treemap
 -  int found = hm.getorDefault(temp.col,-1) if(found==-1) hm.add(temp.col,tempNode.data) //or temp.n.data
+
+#### 09. All Traversals
+- Recursion
+- ArrayLists
+
+#### 10. Vertical Order Traversal
+- a hashmap (treemap) to store the list of all elements acc to col (ascending columns)
+- a custom class / ds, to store each node with column number. a queue for level order traversal
+
+#### 11. Root To Node All Paths
+- Remember that arrays are passed by reference, so create a new copy at every call by taking the old copy and adding the current element to it
+- Whenever you reach the leaf node, add it to the answer arraylist of arraylists of integers. Recursion
