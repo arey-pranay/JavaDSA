@@ -52,3 +52,35 @@ class Solution
         return ans;
     }
 }
+// class Solution {
+//     // Function to return a list of nodes visible from the top view
+//     // from left to right in Binary Tree.
+//     static ArrayList<Integer> topView(Node root) {
+//         ArrayList<Integer> arr = new ArrayList<>();
+//         Queue<Pair> q = new LinkedList<>();
+//         TreeMap<Integer, Integer> hm = new TreeMap<>(); // col : node
+//         q.add(new Pair(root,0));
+//         while(!q.isEmpty()){
+//             int sz = q.size();
+//             for(int i=0;i<sz;i++){
+//                 Pair temp = q.remove();
+//                 Node tempNode = temp.n;
+//                 int found = hm.getOrDefault(temp.col,-1);
+//                 if(found==-1) hm.put(temp.col,tempNode.data);
+//                 if(tempNode.left!=null)q.add(new Pair(tempNode.left, temp.col-1));
+//                 if(tempNode.right!=null)q.add(new Pair(tempNode.right,temp.col+1));
+//             }
+//         }
+//         for(Map.Entry<Integer,Integer> e : hm.entrySet())  arr.add(e.getValue());
+//         // for(int i : hm.keySet())
+//         return arr;
+//     }
+//     static class Pair{
+//         Node n;
+//         int col;
+//         Pair(Node n, int col){
+//             this.n = n;
+//             this.col = col;
+//         }
+//     }
+// }
