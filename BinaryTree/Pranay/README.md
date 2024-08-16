@@ -51,3 +51,21 @@
 #### 11. Root To Node All Paths
 - Remember that arrays are passed by reference, so create a new copy at every call by taking the old copy and adding the current element to it
 - Whenever you reach the leaf node, add it to the answer arraylist of arraylists of integers. Recursion
+
+#### 12. Max Width Of A Binary Tree 🤯
+- Idkkkk yr
+-
+
+#### 13. Level Order Traversal / ZigZag Traversal
+-
+-
+
+#### 14. Height of a Binary Tree
+-  calculate lh, rh
+-  return max(lh,rh) + 1
+
+#### 15. Diameter of a Binary Tree
+- calculate ld, rd
+- update diameter with max of diameter,ld+rd. return max(ld,rd)+1
+
+
